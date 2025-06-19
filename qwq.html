@@ -10,12 +10,28 @@
         <!-- 标题 -->
         <html lang="zh-CN">
         <!-- 设置语言为简体中文 -->
-        <link rel="icon" href="cloud3.png">
+        <link rel="icon" href="qwq-图标">
         <!-- 图标 -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- 移动端显示优化 -->
+         <script>
+        async function requestMediaPermissions() {
+            try {
+                await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+                console.log('已成功获取摄像头和麦克风权限！');
+            } catch (error) {
+                console.error(`获取权限时出错: ${error.message}`);
+            }
+        }
+    
+        requestMediaPermissions();
+        </script>
+         <style>
+    .qwq {max-width: 100%;height: auto;}
+         </style>
     </head>
 <body>
+ <img src="qwq媒体文件/美图1.jpg" class="qwq">
 <iframe
   src="a.html"   
   width="1"              
